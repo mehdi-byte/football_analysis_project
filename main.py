@@ -16,7 +16,7 @@ def main():
     # camera movement 
     camera_movement_estimator = Cameramovementestimator(video_frames[0])
     camera_movement_per_frame = camera_movement_estimator.get_camera_movement(video_frames,read_from_stub=True,stub_path="final_tracks/camera_movement.pkl")
-    camera_movement_estimator.add_adjust_positions(tracks,camera_movement_per_frame)
+    camera_movement_estigemator.add_adjust_positions(tracks,camera_movement_per_frame)
 
     #view_transformer 
     view_transformer_object = View_transformer()
